@@ -1,0 +1,78 @@
+  
+  body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,216,255,1) 49%, rgba(97,97,97,1) 100%);
+  }
+  /*Barra de Navegacion*/
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .navegador2{
+    float: right;
+  }
+  li {
+    float: left;
+    border-right:1px solid rgb(255, 255, 255);
+
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-family: cursive;
+    margin-top: -5px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .login{
+    margin-top: 20px;     
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 15%;
+    margin-bottom: 50px;
+
+}
+.formulario{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.login2{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.formulario > label{
+  color: white;
+  font-family: 'Charlie Text',sans-serif;
+}
+/*-----------pie de pagina---------*/
+
+.pie{
+display: flex;
+justify-content: space-around;
+margin-top: -30px;
+}
+.copy{
+margin-top: -25px;
+text-align: center;
+}

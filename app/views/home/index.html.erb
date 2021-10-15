@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "index", :media => "screen" %>
+
+
+    <title>Prueba</title>
+</head>
+<body>
+
+    <ul>
+        <li><a><%= link_to "ExpresArte", home_index_path,class:"nav-link" %></a></li>
+        <li class="navegador2"><a><%= link_to "Registrarse", home_registrarse_path,class:"nav-link" %></a></li>
+        <li class="navegador2"><a><%= link_to "Iniciar sesión", home_iniciarSesion_path,class:"nav-link" %></a></li>
+    </ul>
+
+    <%= link_to image_tag('kanbanportada.jpg',:alt => 'Mostrar detalle de prospecto',:class => "imagenPortada" ) %>
+
+    <div class="intro">
+        <div class="Titulos">
+            <div class="info2">
+                <h1>¿Qué es ExpresArte?</h1>
+                <p> ExpresArte es una solución fácil, gratuita, flexible y visual 
+                para gestionar proyectos y organizarlo todo, en la que confían millones de personas de todo el mundo.</p>
+
+            </div>
+            <div class="info1">
+                <%= link_to image_tag('Tablero.png', size: "300",:alt => 'Mostrar detalle de prospecto',:class => "imagenTitulo" ) %>
+            </div>
+        </div>
+    </div>
+        
+    <div class="team">
+        <h1>Individual o Equipo</h1>
+        <p>Una poderosa herramienta que te permite llevar acabo proyectos de manera individual o en equipos de trabajo,
+         con una interfaz grafica que facilita el funcionamiento.</p>
+        <%= link_to image_tag('Tam.png', size: "300",:alt => 'Mostrar detalle de prospecto',:class => "imagenTeam" ) %>
+    </div>
+
+        <div class="proyectos2">
+            <h1>Proyectos realizados en ExpresArte</h1>
+        </div>
+        <div class="proyecto1">
+            <%= link_to image_tag('logos/logo1.jpg',:alt => 'Mostrar detalle de prospecto',:class => "imagenPro" ) %>
+            <%= link_to image_tag('logos/logo2.jpg',:alt => 'Mostrar detalle de prospecto',:class => "imagenPro" ) %>
+            <%= link_to image_tag('logos/logo3.png',:alt => 'Mostrar detalle de prospecto',:class => "imagenPro" ) %>
+            <%= link_to image_tag('logos/logo4.jpg',:alt => 'Mostrar detalle de prospecto',:class => "imagenPro" ) %>
+        </div>
+        
+    <hr>
+
+    <footer class="pie">
+        <h6><u>Plantillas</u></h6>
+        <h6><u>Trabajos</u></h6>
+        <h6><u>Ayuda</u></h6>
+        <h6><u>Privacidad</u></h6>
+        <h6><u>Blog</u></h6>
+    </footer>  
+    <h4 class="copy">© Copyright 2021. Todos los derechos reservados.</h4> 
+
+    
+
+</body>
+</html>

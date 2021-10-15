@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "registrarse", :media => "screen" %>
+    <title>Prueba</title>
+</head>
+<body>
+    <ul>
+        <li><a><%= link_to "ExpresArte", home_index_path,class:"nav-link" %></a></li>
+        <li class="navegador2"><a><%= link_to "Registrarse", home_registrarse_path,class:"nav-link" %></a></li>
+        <li class="navegador2"><a><%= link_to "Iniciar sesión", home_iniciarSesion_path,class:"nav-link" %></a></li>
+    </ul>
+
+
+        <div class="login">
+            <form action="" class="formulario">        
+                <%= link_to image_tag('logo user.png',:alt => 'Mostrar detalle de prospecto',:class => "login2" ) %>
+                <br>
+                <label>Intresa tu correo</label><br>
+                <br>
+                <input type="text"><br>
+                <br>
+                <label>Ingresa tu contraseña</label><br>
+                <br>
+                <input type="text"><br>
+                <br>
+                <label>Repite la contraseña</label><br>
+                <br>
+                <input type="text"><br><br>
+                <br>
+                <input type="submit" value="Registrar">
+            </form>
+        </div>
+
+
+        <hr>
+
+        <footer class="pie">
+            <h6><u>Plantillas</u></h6>
+            <h6><u>Trabajos</u></h6>
+            <h6><u>Ayuda</u></h6>
+            <h6><u>Privacidad</u></h6>
+            <h6><u>Blog</u></h6>
+        </footer>  
+        <h4 class="copy">© Copyright 2021. Todos los derechos reservados.</h4> 
+
+</body>
+</html>
